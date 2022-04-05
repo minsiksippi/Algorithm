@@ -1,0 +1,14 @@
+def solution(p):
+    answer = []
+    
+    for i in range(len(p)):
+        cnt=0
+        for j in range(1, len(p)-i):
+            if p[i]>p[i+j]:
+                cnt+=1
+                break
+            else:
+                cnt+=1
+        answer.append(cnt)
+    
+    return answer
